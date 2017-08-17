@@ -31,6 +31,9 @@ BINARIES/chatscript_Debug_v140.exe
 *.tlog
 *.user
 *.suo
+.venv
+RAWDATA_A/
+TOPIC/
 
 # specific files
 private/KORA/TESTS/regress-qabots-result*.txt
