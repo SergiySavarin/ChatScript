@@ -1,3 +1,0 @@
-﻿$cs_trace=0
-#`end variables
-( startup_pitch defaultbot defaultbot x100000 )

@@ -1,2 +1,0 @@
-﻿+ startup_pitch 
-+ defaultbot 
