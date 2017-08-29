@@ -9,9 +9,15 @@ from flask import jsonify
 app = Flask(__name__)
 
 
-@app.route('/<user_name>/<bot_name>/<message>', methods=['POST'])
-def messaging(user_name, bot_name, message):
-    return jsonify({'message': send_to_bot(user_name, bot_name, message)})
+@app.route('/<user_name>/<bot_name>', methods=['POST'])
+def messaging(user_name, bot_name):
+    return jsonify({
+        'message': send_to_bot(
+            user_name,
+            bot_name,
+            request.form.to_dict().get('message')
+        )
+    })
 
 
 def send_to_bot(user_name, bot_name, message):
